@@ -1,8 +1,6 @@
 //Get the number of users count from each reddit url
 
 const axios = require("axios");
-const url =
-    "https://www.reddit.com/r/ethereum/about.json";
 
 //TODO convert this to a query to run on dynamodb
 let subreddit_array = ['ethereum', 'litecoin']
