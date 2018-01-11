@@ -23,5 +23,6 @@ functions:
           path: hello
           method: get
   getRedditUsersCount:
-    handler: get-reddit-users-count.main
+    handler: reddit.getUserCount
+
    

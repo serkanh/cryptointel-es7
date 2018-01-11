@@ -7,8 +7,9 @@ const url =
 //TODO convert this to a query to run on dynamodb
 let subreddit_array = ['ethereum', 'litecoin']
 
-export function main(event, context, callback) {
 
+//Gets all crypto subreddit user count
+export function getUserCount(event, context, callback) {
     const getUserCount = async url => {
         try {
             const response = await axios.get(`https://www.reddit.com/r/${url}/about.json`);
